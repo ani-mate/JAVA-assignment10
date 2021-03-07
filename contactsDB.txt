@@ -1,0 +1,20 @@
+1.
+CREATE DATABASE contactdb;
+
+2.
+USE contactdb;
+
+3.
+DROP TABLE IF EXISTS 'contact_tbl';
+
+4.
+CREATE TABLE 'contact_tbl' (
+  'contactId' int NOT NULL,
+  'contactName' varchar(30) DEFAULT NULL,
+  'contactEmail' varchar(40) DEFAULT NULL,
+  'contactList' varchar(100) DEFAULT NULL,
+  PRIMARY KEY ('contactId')
+);
+
+5.
+INSERT INTO 'contact_tbl' VALUES (100,'Geeta','geet@gamil.com','23434,3445,34345'),(101,'Radha','rad@rediffmail.com',NULL),(102,'Geeta','geeta@gmail.com','345345');
